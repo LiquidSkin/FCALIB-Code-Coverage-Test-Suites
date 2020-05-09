@@ -105,15 +105,7 @@ public class PartialObjectDescriptionTest {
         PartialObjectDescription p = new PartialObjectDescription(set);
         assertTrue(p.addAttribute(set));
     }
-    @Test(expected = IllegalArgumentException.class)
-    public void existingNegatedAttributeTest()
-    {
-        Set<Integer> set = new HashSet<Integer>(Arrays.asList(100,200,300,400,500));
-        PartialObjectDescription p = new PartialObjectDescription();
-        p.addNegatedAttribute(set);
-        p.addNegatedAttribute(set);
 
-    }
 
 
 
