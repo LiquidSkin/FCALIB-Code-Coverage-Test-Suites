@@ -16,7 +16,7 @@ public class PartialObjectDescriptionTest {
         assertTrue(!p.containsAttribute(set));
 
     }
-
+    @Test
     public void partialObjectAtributePresenceTest()
     {
         Set<Integer> set = new HashSet<Integer>(Arrays.asList(1,2,3,4,5));
