@@ -5,6 +5,7 @@ import de.tudresden.inf.tcs.fcaapi.exception.IllegalAttributeException;
 import de.tudresden.inf.tcs.fcaapi.exception.IllegalObjectException;
 import de.tudresden.inf.tcs.fcaapi.utils.IndexedSet;
 import de.tudresden.inf.tcs.fcalib.AbstractContext;
+import de.tudresden.inf.tcs.fcalib.Implication;
 import de.tudresden.inf.tcs.fcalib.ImplicationSet;
 import org.junit.Test;
 import java.util.*;
@@ -15,6 +16,8 @@ import java.util.Set;
 import static org.junit.Assert.*;
 
 public class ImplicationSetTest {
+
+
 
     @Test
     public void implicationSetPresenceTest() {
