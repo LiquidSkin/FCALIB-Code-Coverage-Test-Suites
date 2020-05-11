@@ -105,6 +105,22 @@ public class PartialObjectDescriptionTest {
         PartialObjectDescription p = new PartialObjectDescription(set);
         assertTrue(p.addAttribute(set));
     }
+    @Test
+    public void negatedAttributeReturnsTest()
+    {
+        Set<Integer> set = new HashSet<Integer>(Arrays.asList(100,200,300,400,500));
+        PartialObjectDescription p = new PartialObjectDescription(set);
+        boolean val = false;
+        try
+        {
+          val =   p.containsNegatedAttribute(set);
+        }catch(Exception e)
+        {
+
+        }
+      assertTrue(val == false);
+
+    }
 
 
 
